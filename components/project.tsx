@@ -43,7 +43,7 @@ export default function Project() {
 
 
                 {(display === "design" || display === "all") && (<div className="w-full sm:w-[45%] h-fit p-4">
-                    <div id="img" className="w-full h-35 relative">
+                    <div id="img" className="w-full h-55 relative">
                         <Image src={"/portfolio/kepitingtakpunyasayap.jpeg"} fill alt="foto"></Image>
                     </div>
                     <p className="mt-3 font-semibold">Storyboard</p>
@@ -58,6 +58,8 @@ export default function Project() {
                         <a target="_blank" href="https://www.linkedin.com/feed/update/urn:li:activity:7227874776185249793/"><div className="link border border-pink-500 w-fit h-fit text-sm p-1 px-2 rounded-md font-semibold bg-black">View</div></a>
                     </div>
                 </div>)}
+
+                
 
             </div>
         </>
