@@ -12,6 +12,9 @@ import Lanyard from "@/components/lanyard";
 import SosmedCard from "@/components/sosmedCard";
 import Skill from "@/components/skill";
 import Portfolio from "@/components/Portfolio";
+import Cursor from "@/components/cursor";
+import Footer from "@/components/footer";
+// import Letter from "@/components/letter";
 
 export default function Home() {
 
@@ -24,12 +27,16 @@ export default function Home() {
       <div className="fixed -top-20 -right-10 w-[400] z-[9999]">
         <Lanyard />
       </div>
+      <Cursor></Cursor>
       <SosmedCard></SosmedCard>
       <Circle></Circle>
       <div className="flex z-10 flex-col sm:flex-row w-[95%] h-fit p-4 sm:w-1/2 mx-auto mt-20">
-        <div className="flex flex-col w-full sm:w-[60%]">
+        <div className="flex flex-col w-full sm:w-[60%] relative">
           <p className="text-4xl">Hey, I'm Na. {"\u{1F44B}"}</p>
-          <p className="mt-3" data-aos="fade-up">Welcome to my world. Every line of code, design, and project I develop is a reflection of my passion in this portfolio world.</p>
+          <p className="mt-3" data-aos="fade-up">Hey, I'm Na—I love design, coding, and, of course, cats! Lately, I'm excited to learn more about machine learning. </p>
+          {/* <div className="mt-6">
+            <Letter></Letter>
+          </div> */}
         </div>
         <div className="flex justify-left justify-center items-center w-full mt-3 sm:mt-0 sm:w-[40%]">
           <CardTop></CardTop>
@@ -39,7 +46,7 @@ export default function Home() {
       <div className="w-[95%] z-10 p-4 sm:w-1/2 mx-auto">
         <p className="font-semibold mb-3">About.</p>
         <p className="text-[grey]" data-aos="fade-up">
-          I craft <span className="text-[white] underline cursor-pointer">digital experiences</span> that are uniquely tailored to your brand and vision. By blending creativity with functionality and embracing the <span className="text-[white] underline cursor-pointer">latest design trends</span>, I ensure every project is both visually striking and <span className="text-white underline cursor-pointer">seamlessly efficient</span>.
+          I'm a first-year university student with a growing passion for <span className="text-white underline">design</span>, especially in <span className="text-white underline">illustration</span>. I love creating visually engaging artwork and bringing ideas to life through <span className="text-white underline">digital art</span>. Besides that, I'm also interested in <span className="text-white underline">coding</span> and enjoy exploring how <span className="text-white underline">technology and design</span> can work together. Lately, I've been learning data science, especially <span className="text-white underline">machine learning</span>.
         </p>
       </div>
 
@@ -113,8 +120,9 @@ export default function Home() {
         ))}
       </div>
 
-      <Skill></Skill>
+      <Skill></Skill> 
       <Portfolio></Portfolio>
+      <Footer></Footer>
     </>
   )
 }

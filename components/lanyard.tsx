@@ -24,7 +24,7 @@ import * as THREE from "three";
 // import cardGLB from "./card.glb";
 const cardGLB = "/card.glb"
 // import lanyard from "./lanyard.png";
-const lanyard = "/lanyard.png"
+const lanyard = "/lanyard1.png"
 
 extend({ MeshLineGeometry, MeshLineMaterial });
 
@@ -292,8 +292,8 @@ function Band({ maxSpeed = 50, minSpeed = 0 }: BandProps) {
                     resolution={isSmall ? [1000, 2000] : [1000, 1000]}
                     useMap
                     map={texture}
-                    repeat={[-6, 1]}
-                    lineWidth={2}
+                    repeat={[-3, 1]}
+                    lineWidth={2.3}
                 />
             </mesh>
 

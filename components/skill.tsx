@@ -36,7 +36,7 @@ export default function Skill() {
                     "Adobe Illustrator", "Figma", "Dribbble", "CLIPSTUDIOPAINT", "Framer", "Sketch", "Canva",
                     "Blender", "Aseprite", "Storybook", "Github"
                 ].map((i, index) => (
-                    <div key={index} className="reveal-item w-fit h-fit mt-2 py-1 px-3 bg-white text-black rounded-md flex justify-center items-center font-semibold cursor-pointer hover:bg-black hover:text-white transition-all">
+                    <div key={index} className="link reveal-item w-fit h-fit mt-2 py-1 px-3 bg-white text-black rounded-md flex justify-center items-center font-semibold cursor-pointer hover:bg-black hover:text-white transition-all">
                         {i}
                     </div>
                 ))}
