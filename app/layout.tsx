@@ -1,5 +1,6 @@
 import { Poppins, Instrument_Serif } from "next/font/google";
 import "./globals.css";
+import { Metadata } from "next";
 
 const poppins = Poppins({
   variable: "--font-poppins",
@@ -11,6 +12,10 @@ const instrumentserif = Instrument_Serif({
   variable: "--font-ins-serif",
   subsets: ["latin"],
   weight: ["400"]
+})
+
+export const metadata: Metadata = ({
+  title: "Na Web"
 })
 
 export default function RootLayout({
