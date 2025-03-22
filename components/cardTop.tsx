@@ -30,19 +30,19 @@ const Main = styled.div`
   }
 
   #c1 {
-    border: 1px solid white;
+    border: 2px solid pink;
   }
 
   #c2 {
-    border: 1px solid white;
+    border: 2px solid pink;
   }
 
   #c3 {
-    border: 1px solid white;
+    border: 2px solid pink;
   }
 
   #c4 {
-    border: 1px solid white;
+    border: 2px solid pink;
   }
 
   &:hover #c1 {

@@ -14,7 +14,6 @@ import Skill from "@/components/skill";
 import Portfolio from "@/components/Portfolio";
 import Cursor from "@/components/cursor";
 import Footer from "@/components/footer";
-// import Letter from "@/components/letter";
 
 export default function Home() {
 

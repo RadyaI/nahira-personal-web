@@ -1,41 +1,24 @@
-"use client"
-import AnimatedCursor from "react-animated-cursor";
+"use client";
+import { useEffect, useState } from "react";
 
 export default function Cursor() {
-    return (
-        <>
-            <AnimatedCursor
-                innerSize={8}
-                outerSize={55}
-                color='0, 150, 255'
-                outerAlpha={0.5}
-                innerScale={0.7}
-                outerScale={2}
-                showSystemCursor={false}
-                clickables={[
-                    'a',
-                    'input[type="text"]',
-                    'input[type="email"]',
-                    'input[type="number"]',
-                    'input[type="submit"]',
-                    'input[type="image"]',
-                    'label[for]',
-                    'select',
-                    'textarea',
-                    'button',
-                    '.link',
-                    'span'
-                ]}
-                outerStyle={{
-                    border: '2px solid pink',
-                    backgroundColor: 'rgba(255, 192, 203, 0.5)',
-                    filter: 'blur(5px)'
-                }}
-                innerStyle={{
-                    backgroundColor: 'transparent',
-                    border: '2px solid pink'
-                }}
-            />
-        </>
-    )
+  const [position, setPosition] = useState({ x: 0, y: 0 });
+
+  useEffect(() => {
+    const moveCursor = (e) => {
+      setPosition({ x: e.clientX, y: e.clientY });
+    };
+
+    window.addEventListener("mousemove", moveCursor);
+    return () => window.removeEventListener("mousemove", moveCursor);
+  }, []);
+
+  return (
+    <div
+      className="pointer-events-none fixed top-0 left-0 w-20 h-20 rounded-full opacity-50 blur-xl transition-all duration-300 ease-out bg-gradient-to-r from-blue-400 to-pink-500"
+      style={{
+        transform: `translate(${position.x - 40}px, ${position.y - 40}px)`,
+      }}
+    />
+  );
 }

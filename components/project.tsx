@@ -10,9 +10,9 @@ export default function Project() {
     return (
         <>
             <div className="mt-4 hidden sm:flex p-4 justify-center gap-6">
-                <div onClick={() => setDisplay("all")} className={`link border ${display == "all" ? "border-pink-500" : "border-white"} rounded-md w-fit h-fit py-2 px-4`}>All</div>
-                <div onClick={() => setDisplay("development")} className={`link border ${display == "development" ? "border-pink-500" : "border-white"} rounded-md w-fit h-fit py-2 px-4`}>Development</div>
-                <div onClick={() => setDisplay("design")} className={`link border ${display == "design" ? "border-pink-500" : "border-white"} rounded-md w-fit h-fit py-2 px-4`}>Design</div>
+                <div onClick={() => setDisplay("all")} className={`link border ${display == "all" ? "border-pink-500" : "border-white"} rounded-md w-fit h-fit py-2 px-4 cursor-pointer`}>All</div>
+                <div onClick={() => setDisplay("development")} className={`link border ${display == "development" ? "border-pink-500" : "border-white"} rounded-md w-fit h-fit py-2 px-4 cursor-pointer`}>Development</div>
+                <div onClick={() => setDisplay("design")} className={`link border ${display == "design" ? "border-pink-500" : "border-white"} rounded-md w-fit h-fit py-2 px-4 cursor-pointer`}>Design</div>
             </div>
             <div className="w-full flex flex-col sm:flex-row flex-wrap justify-evenly gap-4 mx-auto p-4 mt-5">
 
